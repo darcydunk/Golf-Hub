@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Golf Gear Shop</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f7f5;
+      color: #222;
+    }
+    header {
+      background-color: #004d26;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 5px;
+    }
+    nav {
+      background-color: #006633;
+      text-align: center;
+      padding: 15px 0;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .hero {
+      background-image: url("https://cdn.pixabay.com/photo/2016/11/22/23/57/golf-1855634_1280.jpg");
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 120px 20px;
+    }
+    .hero h2 {
+      font-size: 2.8em;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 4px #000;
+    }
+    .hero p {
+      font-size: 1.2em;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .hero a {
+      margin-top: 20px;
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #004d26;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 6px;
+    }
+    .search-bar {
+      text-align: center;
+      padding: 20px;
+    }
+    .search-bar input {
+      padding: 10px;
+      width: 80%;
+      max-width: 400px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .products {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .category {
+      margin-bottom: 50px;
+    }
+    .category h2 {
+      border-bottom: 3px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-size: 1.8em;
+      color: #004d26;
+    }
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 220px;
+      text-align: center;
+      padding: 15px;
+    }
+    .product img {
+      max-width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 6px;
+    }
+    .product h4 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 0;
+      font-weight: bold;
+      color: #006633;
+    }
+    footer {
+      background-color: #004d26;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Golf Gear Shop</h1>
+    <p>Established 2023 • Your home for premium golf equipment and clothing</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#shop">Shop Now</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Gear Up Like a Pro</h2>
+    <p>Explore clubs, clothing, accessories & more</p>
+    <a href="#shop">Shop Now</a>
+  </section>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search for golf gear...">
+  </div>
+
+  <div class="products" id="shop">
+    
+    <div class="category">
+      <h2>Golf Clubs</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71JTTy38uDL._AC_SL1500_.jpg" alt="Driver">
+          <h4>Callaway Driver</h4>
+          <p>$499.00</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81WEMIHpZLL._AC_SL1500_.jpg" alt="Irons">
+          <h4>Titleist Irons (3–9)</h4>
+          <p>$899.00</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61ahN3BxvAL._AC_SL1001_.jpg" alt="Putter">
+          <h4>Odyssey Putter</h4>
+          <p>$299.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Golf Bags</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81qzk5JjPjL._AC_SL1500_.jpg" alt="Cart Bag">
+          <h4>Callaway Cart Bag</h4>
+          <p>$249.00</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81TeTKgTSUL._AC_SL1500_.jpg" alt="Carry Bag">
+          <h4>Lightweight Carry Bag</h4>
+          <p>$179.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Golf Clothing</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61r7xB2rGEL._AC_UX522_.jpg" alt="Polo Shirt">
+          <h4>Men’s Golf Polo</h4>
+          <p>$49.95</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/61rpYk-zYCL._AC_UX466_.jpg" alt="Shorts">
+          <h4>Golf Shorts</h4>
+          <p>$59.95</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71U3QpASD6L._AC_UX466_.jpg" alt="Shoes">
+          <h4>FootJoy Golf Shoes</h4>
+          <p>$129.00</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Accessories</h2>
+      <div class="product-list">
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/81b2MvHSN6L._AC_SL1500_.jpg" alt="Gloves">
+          <h4>Golf Gloves</h4>
+          <p>$29.00</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71gm5d78f9L._AC_SL1500_.jpg" alt="Headcovers">
+          <h4>Headcovers Set</h4>
+          <p>$34.95</p>
+        </div>
+        <div class="product">
+          <img src="https://m.media-amazon.com/images/I/71A-CN1HZQL._AC_SL1500_.jpg" alt="Tees">
+          <h4>Golf Tees (100)</h4>
+          <p>$14.99</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Golf Gear Shop – All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
